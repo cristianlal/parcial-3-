@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Vivero Vital - Control de Invernadero</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f8f9fa;">
+    <!-- Encabezado de la página -->
+    <div style="background-color: #e9ecef; padding: 20px; border-bottom: 3px solid #ced4da; display: flex; justify-content: space-between; align-items: center;">
+        <!-- Logo e identificación del sitio -->
+        <div style="display: flex; align-items: center;">
+            <!-- Ícono de hoja -->
+            <img src="https://cdn-icons-png.flaticon.com/512/3159/3159367.png" alt="Ícono de Hoja" style="height: 30px; margin-right: 10px;">
+            <!-- Nombre del sitio -->
+            <h1 style="margin: 0; color: #28a745;"><b>Vivero Colombia</b></h1>
+        </div>
+        <!-- Íconos adicionales en el encabezado -->
+        <div>
+            <table style="border-collapse: collapse;">
+                <tr>
+                    <!-- Ícono de estado (verde) -->
+                    <td style="padding-right: 10px; text-align: center;">
+                        <img src="https://images.emojiterra.com/twitter/v14.0/1024px/1f7e2.png" alt="Ícono de Persona" style="height: 30px; vertical-align: middle;">
+                    </td>
+                    <!-- Ícono de usuario -->
+                    <td style="text-align: center;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/194/194938.png" alt="Ícono de Persona" style="height: 30px; vertical-align: middle;">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Barra de búsqueda y filtro -->
+    <div style="padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+        <!-- Campo de búsqueda funcional -->
+        <form action="invernaderos.html" method="GET" style="display: flex; align-items: center; width: 100%; margin-right: 20px;">
+            <input 
+                type="text" 
+                name="query" 
+                placeholder="Buscar invernadero..." 
+                style="flex: 1; border: 1px solid #ccc; border-radius: 25px; padding: 8px 15px; background-color: #fff; outline: none; font-size: 1em;">
+            <button 
+                type="submit" 
+                style="margin-left: 10px; background-color: #28a745; color: white; border: none; border-radius: 25px; padding: 8px 15px; cursor: pointer; font-size: 1em;">
+                Buscar
+            </button>
+        </form>
+        <!-- Filtro de invernaderos como lista desplegable -->
+        <form action="invernaderos.html" method="GET" style="margin: 0;">
+            <select name="filtro" style="border: 1px solid #ccc; border-radius: 25px; padding: 8px 15px; background-color: #fff; font-size: 1em; cursor: pointer;">
+                <option value="">Filtrar por...</option>
+                <option value="operativo">Operativo</option>
+                <option value="reparacion">Reparación</option>
+                <option value="inspeccion">Inspección</option>
+                <option value="expansion">Expansión</option>
+            </select>
+            
+        </form>
+    </div>
+
+    <!-- Contenedor principal de los invernaderos -->
+    <div style="padding: 20px;">
+        <!-- Lista de invernaderos -->
+        <div style="margin-bottom: 20px;">
+            <!-- Tarjeta del invernadero "Los Andes" -->
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #fff; border: 1px solid #ddd;">
+                <!-- Nombre del invernadero -->
+                <div style="flex: 2; font-weight: bold; color: #333;">Invernadero Los Andes</div>
+                <!-- Estado del invernadero -->
+                <div style="flex: 1; text-align: center; color: #155724; background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 5px; padding: 8px;">Operativo</div>
+                <!-- Botón para editar -->
+                <button style="flex: 1; text-align: center; color: #0056b3; background-color: #e7f2fa; border: 1px solid #b8daff; border-radius: 5px; padding: 8px; cursor: pointer;">Editar</button>
+                <!-- Botón para eliminar -->
+                <button style="flex: 1; text-align: center; color: #c82333; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 5px; padding: 8px; cursor: pointer;">Eliminar</button>
+                <!-- Botón para ver detalles -->
+                <button style="flex: 1; text-align: center; color: #856404; background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 5px; padding: 8px; cursor: pointer;">Detalles</button>
+            </div>
+            <!-- Tarjeta del invernadero "Las Flores" -->
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #fff; border: 1px solid #ddd;">
+                <!-- Nombre del invernadero -->
+                <div style="flex: 2; font-weight: bold; color: #333;">Invernadero Las Flores</div>
+                <!-- Estado del invernadero -->
+                <div style="flex: 1; text-align: center; color: #856404; background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 5px; padding: 8px;">Reparación</div>
+                <!-- Botón para editar -->
+                <button style="flex: 1; text-align: center; color: #0056b3; background-color: #e7f2fa; border: 1px solid #b8daff; border-radius: 5px; padding: 8px; cursor: pointer;">Editar</button>
+                <!-- Botón para eliminar -->
+                <button style="flex: 1; text-align: center; color: #c82333; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 5px; padding: 8px; cursor: pointer;">Eliminar</button>
+                <!-- Botón para ver detalles -->
+                <button style="flex: 1; text-align: center; color: #856404; background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 5px; padding: 8px; cursor: pointer;">Detalles</button>
+            </div>
+            <!-- Tarjeta del invernadero "Los Pinos" -->
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #fff; border: 1px solid #ddd;">
+                <!-- Nombre del invernadero -->
+                <div style="flex: 2; font-weight: bold; color: #333;">Invernadero Los Pinos</div>
+                <!-- Estado del invernadero -->
+                <div style="flex: 1; text-align: center; color: #856404; background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 5px; padding: 8px;">Inspección</div>
+                <!-- Botón para editar -->
+                <button style="flex: 1; text-align: center; color: #0056b3; background-color: #e7f2fa; border: 1px solid #b8daff; border-radius: 5px; padding: 8px; cursor: pointer;">Editar</button>
+                <!-- Botón para eliminar -->
+                <button style="flex: 1; text-align: center; color: #c82333; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 5px; padding: 8px; cursor: pointer;">Eliminar</button>
+                <!-- Botón para ver detalles -->
+                <button style="flex: 1; text-align: center; color: #856404; background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 5px; padding: 8px; cursor: pointer;">Detalles</button>
+            </div>
+
+            <!-- Tarjeta del invernadero "El Mirador" -->
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #fff; border: 1px solid #ddd;">
+                <!-- Nombre del invernadero -->
+                <div style="flex: 2; font-weight: bold; color: #333;">Invernadero El Mirador</div>
+                <!-- Estado del invernadero -->
+                <div style="flex: 1; text-align: center; color: #856404; background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 5px; padding: 8px;">Expansión</div>
+                <!-- Botón para editar -->
+                <button style="flex: 1; text-align: center; color: #0056b3; background-color: #e7f2fa; border: 1px solid #b8daff; border-radius: 5px; padding: 8px; cursor: pointer;">Editar</button>
+                <!-- Botón para eliminar -->
+                <button style="flex: 1; text-align: center; color: #c82333; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 5px; padding: 8px; cursor: pointer;">Eliminar</button>
+                <!-- Botón para ver detalles -->
+                <button style="flex: 1; text-align: center; color: #856404; background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 5px; padding: 8px; cursor: pointer;">Detalles</button>
+            </div>
+
+            <!-- Tarjeta del invernadero "Las Brisas" -->
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-bottom: 10px; border-radius: 8px; background-color: #fff; border: 1px solid #ddd;">
+                <!-- Nombre del invernadero -->
+                <div style="flex: 2; font-weight: bold; color: #333;">Invernadero Las Brisas</div>
+                <!-- Estado del invernadero -->
+                <div style="flex: 1; text-align: center; color: #155724; background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 5px; padding: 8px;">Operativo</div>
+                <!-- Botón para editar -->
+                <button style="flex: 1; text-align: center; color: #0056b3; background-color: #e7f2fa; border: 1px solid #b8daff; border-radius: 5px; padding: 8px; cursor: pointer;">Editar</button>
+                <!-- Botón para eliminar -->
+                <button style="flex: 1; text-align: center; color: #c82333; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 5px; padding: 8px; cursor: pointer;">Eliminar</button>
+                <!-- Botón para ver detalles -->
+                <button style="flex: 1; text-align: center; color: #856404; background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 5px; padding: 8px; cursor: pointer;">Detalles</button>
+            </div>
+        </div>
+
+        <!-- Botón para regresar -->
+        <div style="text-align: right; margin-top: 20px;"> 
+            <a href="principal.html" style="background-color: #007bff; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none;">
+                <img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" alt="Ícono de Regresar" style="height: 16px; margin-right: 5px; vertical-align: middle;">
+                Regresar
+            </a>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div style="background-color: #343a40; color: #fff; padding: 20px; text-align: center; border-top: 3px solid #6c757d; margin-top: 30px;">
+        <!-- Derechos reservados -->
+        <p style="margin: 0;">&copy; 2025 Vivero Vital. Todos los derechos reservados.</p>
+        <!-- Íconos de redes sociales -->
+        <div style="margin-top: 10px;">
+            <!-- Enlace a Facebook -->
+            <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Ícono de Facebook" style="height: 24px; vertical-align: middle;">
+            </a>
+            <!-- Enlace a Twitter -->
+            <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="Ícono de Twitter" style="height: 24px; vertical-align: middle;">
+            </a>
+            <!-- Enlace a Instagram -->
+            <a href="#" style="color: #fff; text-decoration: none; margin: 0 10px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384021.png" alt="Ícono de Instagram" style="height: 24px; vertical-align: middle;">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
